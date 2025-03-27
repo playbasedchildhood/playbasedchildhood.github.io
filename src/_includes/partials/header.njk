@@ -1,0 +1,15 @@
+<header class="wrapper">
+  <a href="#main" class="skip-link">{{ meta.skipContent }}</a>
+
+  <div class="repel ontop gutter-s">
+    <a href="/" class="logo | cluster" {{ indicateActiveHome }}>
+          <span class="fa-stack fa-2x" style="font-size:1.5rem;">
+                    <i class="fa-solid fa-tablet-screen-button fa-stack-1x"></i>
+                    <i class="fa-solid fa-ban fa-stack-2x" style="color:#dd4462"></i>
+                  </span>
+
+      <span class="font-display">{{ meta.siteName }}</span>
+    </a>
+    {% include "partials/main-nav.njk" %}
+  </div>
+</header>

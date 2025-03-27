@@ -1,0 +1,93 @@
+---
+layout: base
+permalink: /index.html
+title: 'Join the Play-Based Childhood Initiative'
+description: 'Free and risky play'
+blog:
+  title: 'Blog'
+  intro: "Latest 4 posts, short items that link to relevant articles on the web!"
+---
+
+<div class="wrapper">
+  <header class="full | section" style="--spot-color: var(--color-primary)">
+    <div class="section__inner flow region">
+      <h1 class="text-center" style="color: var(--color-light);">{{ title }}</h1>
+    </div>
+
+    {% svg "divider/waves", null, "seperator" %}
+  </header>
+
+  <article class="full | region">
+    <div class="wrapper flow prose">
+      <h2 id="an-eleventy-starter">The Play-Based Childhood Initiative</h2>
+      <p>
+       The Play-Based Childhood initiative advocates for a childhood free from unnecessary digital exposure. It supports parents in setting boundaries around screen time to ensure a healthier developmental path for their children.
+      </p>
+      <h3>Our core principles include:</h3>
+        <ol>
+            <li>No smartphones for children under a certain age: Young children do not receive a smartphone, reducing unnecessary digital exposure.</li>
+            <li>Limited and monitored screen time: Television, video games, and other digital media should be restricted and closely supervised by parents.</li>
+            <li>Promotion of traditional play-based activities: Children should engage in outdoor play, sports, reading, and other real-world experiences to enhance their physical and cognitive skills.</li>
+            <li>No social media for young children and adolescents: Even when children are introduced to smartphones at an appropriate age, social media access remains restricted due to its known negative effects on mental and physical health (HERE LINK TO THE TEXT IN YELLOW).</li>
+            <li>Encouragement of parental involvement: Parents play a crucial role in guiding children toward healthy habits, ensuring that screen time does not replace valuable family and social interactions.</li>
+        </ol>
+      <h2 id="join">Contract on Non-Use of a Smartphone</h2>
+
+      <p>We invite parents and guardians to join us in our mission. As part of the initiative, we have established the Contract on Non-Use of a Smartphone, which serves as a commitment to delaying smartphone use among children and promoting healthier childhood experiences.</p>
+      <p>By signing this contract, you pledge to:</p>
+          <ul><li>Delay giving a smartphone to your child until an appropriate age.</li>
+          <li>Actively monitor and limit screen exposure in your household.</li>
+          <li>Encourage outdoor activities, creative play, and face-to-face social interactions.</li>
+          <li>Educate your child on the responsible use of digital technology when they reach an appropriate age.</li></ul>
+      <p>This is not just a personal choice but a movement towards safeguarding the well-being of future generations. By joining this initiative, you will become part of a growing community of parents and caregivers dedicated to fostering a healthier, screen-free childhood.</p>
+
+      <h3>How to Get Involved</h3>
+      <p>If you share our concerns about the overuse of digital devices in childhood and want to make a difference, here’s how you can take action:</p>
+
+      <ul>
+          <ul>
+          <li><strong>Sign the Contract:</strong> Pledge your commitment to responsible screen use by signing the Contract on Non-Use of a Smartphone. There should be some indication what this can be done.</li>
+          <li><strong>Spread Awareness:</strong> Share information about the Play-Based Childhood initiative with family, friends, and your local community.</li>
+          <li><strong>Engage in Play-Based Activities:</strong> Organise or participate in local events that encourage traditional play, storytelling, and outdoor adventures for children.</li>
+          <li><strong>Be a Role Model:</strong> Children learn by example. Set a positive precedent by reducing your own screen time, prioritising real-life interactions, and demonstrating a balanced approach to technology use.</li></ul>
+      </ul>
+
+      <h2>Final thoughts</h2>
+      <p>
+      The widespread use of smartphones and digital screens is a reality of modern life, but it is up to us as parents and caregivers to ensure that children grow up in an environment that prioritises healthy development over digital dependence. Through the Play-Based Childhood initiative, we can collectively take a stand to protect our children’s well-being and future.
+      </p><p>
+      If you believe in this mission and want to contribute to a healthier childhood experience, join us today. Let’s work together to create a world where children can enjoy the wonders of childhood free from the overwhelming influence of digital technology.
+      </p>
+
+      <h2>Signed by</h2>
+      <p>As of today, the signatories to the Playbased initiative include:</p>
+
+      <ul>
+      <li>Vesna Naglič</li>
+      <li>Len Dierickx <a href="https://www.linkedin.com/in/lendierickx/" title="Linkedin profile for Len Dierickx"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+  </article>
+
+  <section class="full | region">
+    <div class="wrapper flow prose">
+      <h2>{{ blog.title }}</h2>
+      <!-- blog intro text is optional. -->
+
+      {% if blog.intro %}
+        <p>{{ blog.intro }}</p>
+      {% endif %}
+
+      <div class="feature |  region region-space-l">
+        <custom-masonry layout="50-50">
+          <!-- loop posts -->
+          {% set itemList = collections.allPosts %}
+					{% asyncEach item in itemList.slice(0, 4) %}
+						{% set definedDate = item.date %}
+						{% include "partials/card-blog.njk" %}
+					{% endeach %}
+        </custom-masonry>
+      </div>
+    </div>
+  </section>
+</div>

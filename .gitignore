@@ -2,7 +2,7 @@
 node_modules
 
 # generated files
-dist
+#dist
 src/_includes/css
 src/_includes/scripts
 

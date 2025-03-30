@@ -1,15 +1,14 @@
 ---
-title: Download and sign the document
+title: Getting started
 permalink: /get-started/index.html
 description: 'Everything you need to get started'
 layout: page
 ---
 
-## Option 1: Download the document
+## Option 1: <br>Sign on the Website via Email
 
-Explain the document what is in it, and the link
+To sign online, simply send an email to us (len@astuanax.com), and we will add your name to the list of supporters. This method is quick and easy, allowing you to show your support from anywhere.
 
+## Option 2:<br> Download the Document for Offline Signatures
 
-## Option 2: Sign on the website
-
-Explain: send email, name will be mentioned on the homepage
+Alternatively, you can <a href="https://github.com/playbasedchildhood/playbasedchildhood.github.io/raw/refs/heads/main/documents/Agreement%20about%20smart%20phones-30.3.25.docx">download the Word document</a> and collect signatures from others in person. This option is ideal for sharing with groups or communities who want to show their support together.

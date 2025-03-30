@@ -2,6 +2,6 @@
 /* TEAM */ Developer: Len Dierickx Contact: len@astuanax.com Site:
 https://www.astuanax.com/
 
-  Find me on: https://front-end.social/@lene
+  Find me on: https://www.astuanax.com/
 
 /* SITE */ Doctype: HTML5

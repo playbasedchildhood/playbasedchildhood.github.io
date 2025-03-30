@@ -18,7 +18,7 @@ export const creator = {
   name: 'Len Dierickx', // i.e. Lene Saile - creator's (developer) name.
   email: 'len@astuanax.com', // i.e. hola@lenesaile.com - email of the author
   website: 'https://www.astuanax.com/', // i.e. https.://www.lenesaile.com - the personal site of the author
-  social: 'https://front-end.social/@lene'
+  social: 'https://www.astuanax.com/'
 };
 export const pathToSvgLogo = 'src/assets/svg/misc/logo.svg'; // used for favicon generation
 export const themeColor = '#FFB200'; // used in manifest, for example primary color value
@@ -88,7 +88,7 @@ export const greenweb = {
 };
 export const viewRepo = {
   // this is for the view/edit on github link. The value in the package.json will be pulled in.
-  allow: true,
+  allow: false,
   infoText: 'View this page on GitHub'
 };
 export const easteregg = true;
